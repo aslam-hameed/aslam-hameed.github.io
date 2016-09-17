@@ -18,7 +18,7 @@ app.controller("myCtrl", function($scope) {
 
     $scope.tree = [{name: "Avvabi", expanded:true, nodes: [
         {name: "Shahul Hameed", expanded:true, nodes: [
-            {name: "Aslam - Rishana", expanded:true, nodes: [
+            {name: "Aslam - Rishana", img: "images/Aslam.jpg", expanded:true, nodes: [
                 {name: "Haleema", expanded:true, nodes: []},
                 {name: "Mariam", expanded:true, nodes: []}
             ]},
