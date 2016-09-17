@@ -16,29 +16,29 @@ app.controller("myCtrl", function($scope) {
          data.expanded=true;
     }
 
-    $scope.tree = [{name: "Avvabi", expanded:true, nodes: [
-        {name: "Shahul Hameed", expanded:true, nodes: [
+    $scope.tree = [{name: "Avvabi", img: "images/flower.jpg", expanded:true, nodes: [
+        {name: "Moinhi", img: "images/flower.jpg", expanded:true, nodes: []},
+        {name: "Shahul Hameed", img: "images/flower.jpg", expanded:true, nodes: [
             {name: "Aslam - Rishana", img: "images/Aslam.jpg", expanded:true, nodes: [
-                {name: "Haleema", expanded:true, nodes: []},
-                {name: "Mariam", expanded:true, nodes: []}
+                {name: "Haleema", img: "images/flower.jpg", expanded:true, nodes: []},
+                {name: "Mariam", img: "images/flower.jpg", expanded:true, nodes: []}
             ]},
-            {name: "Musthak - Fazmina", expanded:true, nodes: [
-                {name: "Fathima", expanded:true, nodes: []},
-                {name: "Fathah", expanded:true, nodes: []}
+            {name: "Musthak - Fazmina", img: "images/Musthak.jpg", expanded:true, nodes: [
+                {name: "Fathima", img: "images/flower.jpg", expanded:true, nodes: []},
+                {name: "Fathah", img: "images/flower.jpg", expanded:true, nodes: []}
             ]},
-            {name: "Rubeena - Shafi", expanded:true, nodes: [
-                {name: "Hakeem", expanded:true, nodes: []},
-                {name: "Hameed", expanded:true, nodes: []},
-                {name: "Abdulla", expanded:true, nodes: []}
+            {name: "Rubeena - Shafi", img: "images/flower.jpg", expanded:true, nodes: [
+                {name: "Hakeem", img: "images/flower.jpg", expanded:true, nodes: []},
+                {name: "Hameed", img: "images/flower.jpg", expanded:true, nodes: []},
+                {name: "Abdulla", img: "images/flower.jpg", expanded:true, nodes: []}
             ]},
-            {name: "Sharafath - Shahina", expanded:true, nodes: [
-                {name: "Omar", expanded:true, nodes: []}
+            {name: "Sharafath - Shahina", img: "images/flower.jpg", expanded:true, nodes: [
+                {name: "Omar", img: "images/flower.jpg", expanded:true, nodes: []}
             ]},
-            {name: "Ansif", expanded:true, nodes: []},
-            {name: "Zahir", expanded:true, nodes: []},
-            {name: "Ruksana", expanded:true, nodes: []}
-        ]},
-        {name: "Moinhi", expanded:true, nodes: []}
+            {name: "Ansif", img: "images/flower.jpg", expanded:true, nodes: []},
+            {name: "Zahir", img: "images/flower.jpg", expanded:true, nodes: []},
+            {name: "Ruksana", img: "images/flower.jpg", expanded:true, nodes: []}
+        ]}
         ]}];
 
 });

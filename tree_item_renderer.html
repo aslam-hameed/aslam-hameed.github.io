@@ -2,7 +2,7 @@
 <button ng-click="expand(data)" ng-show="(data.nodes.length > 0)&&(!data.expanded)">+</button>
 <img src="{{data.img}}" alt="" style="width:50px;height:50px;">
 {{data.name}}
-<ul ng-show="data.expanded">
+<ol ng-show="data.expanded">
     <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
-</ul>
+</ol>
 </script>
