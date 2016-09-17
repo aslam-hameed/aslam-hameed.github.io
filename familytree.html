@@ -2,16 +2,6 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body>
-<script type="text/ng-template"  id="tree_item_renderer.html">
-    <button ng-click="collapse(data)" ng-show="(data.nodes.length > 0)&&(data.expanded)">Collapse</button>
-    <button ng-click="expand(data)" ng-show="(data.nodes.length > 0)&&(!data.expanded)">Expand</button>
-    {{data.name}}
-    <button ng-click="add(data)">Add node</button>
-    <button ng-click="delete(data)" ng-show="data.nodes.length > 0">Delete nodes</button>
-    <ul ng-show="data.expanded">
-        <li ng-repeat="data in data.nodes" ng-include="'tree_item_renderer.html'"></li>
-    </ul>
-</script>
 
 <div ng-app="myApp" ng-controller="myCtrl">
     <li ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></li>
